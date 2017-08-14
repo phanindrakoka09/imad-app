@@ -20,7 +20,7 @@ var articles = {
                 <p>
                     this is my first practical.this is my first practical.this is my first practical.this is my first practical.this is my first practical.this is my first practical.this is my first practical.this is my first practical.
                 </p>`
-},
+    },
     'article-two' :{ 
     title: "PRACTISING THE ARTICLE TWO" ,
     heading: "PHANINDRA KOKA | AVIT COLLEGE" ,
@@ -38,7 +38,7 @@ var articles = {
     ` <p>
          cried a lot on the first day of my college cuz of my bae !
       </p>`
-},
+    },
     
 };
 
@@ -89,14 +89,7 @@ app.get('/', function (req, res) {
 });
 app.get('/articlename', function (req, res) {
     var articlename=req.params.articlename;
-   res.send(createtemplate(articles[articlename]));
-});
-app.get('/article-two', function (req, res) {
-   res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
-
-});
-app.get('/article-three', function (req, res) {
-   res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
+   res.send(createTemplate(articles[articlename]));
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
