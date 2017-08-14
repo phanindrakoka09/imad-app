@@ -8,6 +8,8 @@ var element = document.getElementById("main-text"
 
 element.innerHTML = 'hai this is done using the javascript';
 
+//move the image code
+
 var img = document.getElementById('madi');
 var marginLeft = 0;
 function moveRight(){
