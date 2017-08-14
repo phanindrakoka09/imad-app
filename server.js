@@ -38,7 +38,7 @@ var articles = {
     ` <p>
          cried a lot on the first day of my college cuz of my bae !
       </p>`
-    },
+    }
     
 };
 
