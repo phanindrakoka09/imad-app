@@ -9,7 +9,13 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/article-one', function (req, res) {
-    res.send('<a>https://avitlearners.blogspot.in/<a>');
+    res.send('article one has been requessted');    
+});
+app.get('/article-two', function (req, res) {
+    res.send('article two has been requessted');
+});
+app.get('/article-three', function (req, res) {
+    res.send('article three has been requessted');
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
