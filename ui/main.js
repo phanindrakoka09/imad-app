@@ -8,13 +8,3 @@ var element = document.getElementById("main-text"
 
 element.innerHTML = 'hai this is done using the javascript';
 
-var img = document.getElementById('madi');
-var marginLeft = 0;
-function moveLeft () {
-    marginLeft = mariginLeft + 1;
-    img.style.marginLeft = marginLeft + 'px' ;
-}
-img.onclick = function () {
-    var interval = setInterval(moveRight, 50);
- 
-};
