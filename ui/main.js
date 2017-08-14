@@ -10,7 +10,7 @@ element.innerHTML = 'hai this is done using the javascript';
 
 var img = document.getElementById('madi');
 var marginLeft = 0;
-function moveRight () {
+function moveLeft () {
     marginLeft = mariginLeft + 1;
     img.style.marginLeft = marginLeft + 'px' ;
 }
