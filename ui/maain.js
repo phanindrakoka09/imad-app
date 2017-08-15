@@ -57,12 +57,5 @@ submit.onclick = function() {
   var nameInput = document.getElementById('name');  
   var name = nameInput.value;
     
-    //capture a list of names 
-    var names = ['name1','name2','name3','name 4'];
-    var list = '';
-    for (var i=0; i< names.length; i++) {
-        list += '<li>' + names[i] + '</li>' ;
-        }
-        var ul =document.getElementById('namelist');
-        ul.innerHTML=list;
+   
 };
