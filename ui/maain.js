@@ -27,6 +27,8 @@ button.onclick = function (){
 // capture the name 
 
 var submit = document.getElementById('submit_btn');
+var nameInput = document.getElementById('name');  
+var name = nameInput.value;
 submit.onclick = function() {
     //make a request to the counter end point
    var request = new XMLHttpRequest();
@@ -54,8 +56,7 @@ submit.onclick = function() {
   //make the request 
   request.open('GET', 'http://phanindrakoka.imad.hasura-app.io/submit-name?name=' +name,true);
   request.send(null);
-  var nameInput = document.getElementById('name');  
-  var name = nameInput.value;
+  
     
    
 };
