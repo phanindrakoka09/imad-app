@@ -38,10 +38,10 @@ submit.onclick = function() {
           //take some action
           if (request.status === 200) {
               //capture a list of names 
-    var names = request.responseText;
-    name = JSON.parse(names);
-    var list = '';
-    for (var i=0; i< names.length; i++) {
+        var names = request.responseText;
+        name = JSON.parse(names);
+        var list = '';
+        for (var i=0; i< names.length; i++) {
         list += '<li>' + names[i] + '</li>' ;
         }
         var ul =document.getElementById('namelist');
